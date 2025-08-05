@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: CookieYes Consent Logger Enhanced
+ * Plugin Name: CookieYes Consent Logger
  * Description: GDPR-compliant logging of CookieYes consent with pagination, search, PDF generation, and automatic cookie tracking.
  * Version: 2.0.0
  * Author: Imran Khan, Webkonsulenterne
