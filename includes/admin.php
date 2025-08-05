@@ -17,7 +17,7 @@ function ccl_add_submenu_page() {
 
 // Add admin scripts and styles
 add_action('admin_enqueue_scripts', function($hook) {
-    if ($hook !== 'cookie-law-info_page_cookieyes-consent-logs') {
+    if ($hook !== 'cookieyes_page_cookieyes-consent-logs') {
         return;
     }
     
