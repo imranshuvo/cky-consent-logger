@@ -1,7 +1,9 @@
 <?php
 // Enhanced includes/admin.php
 
-add_action('admin_menu', function () {
+add_action('admin_menu', 'ccl_add_submenu_page', 100);
+
+function ccl_add_submenu_page() {
     add_submenu_page(
         'cookie-law-info',
         __('Consent Logs', 'cookieyes-consent-logger'),
@@ -10,7 +12,8 @@ add_action('admin_menu', function () {
         'cookieyes-consent-logs',
         'ccl_render_admin_page'
     );
-});
+}
+
 
 // Add admin scripts and styles
 add_action('admin_enqueue_scripts', function($hook) {
