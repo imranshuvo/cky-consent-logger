@@ -313,7 +313,7 @@ function ccl_generate_tcpdf($log, $categories, $site_name, $site_url) {
     // This function would use TCPDF library for proper PDF generation
     // You would need to include TCPDF library first
     
-    require_once(ABSPATH . 'wp-content/plugins/cookieyes-consent-logger/vendor/tcpdf/tcpdf.php');
+    require_once plugin_dir_path(__DIR__) . 'vendor/tecnickcom/tcpdf/tcpdf.php';
     
     $pdf = new TCPDF(PDF_PAGE_ORIENTATION, PDF_UNIT, PDF_PAGE_FORMAT, true, 'UTF-8', false);
     

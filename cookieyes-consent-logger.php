@@ -20,6 +20,7 @@ define('CCL_URL', plugin_dir_url(__FILE__));
 define('CCL_BASENAME', plugin_basename(__FILE__));
 
 // Include required files
+require_once CCL_PATH .	'vendor/autoload.php';
 require_once CCL_PATH . 'includes/db.php';
 require_once CCL_PATH . 'includes/logger.php';
 require_once CCL_PATH . 'includes/admin.php';
